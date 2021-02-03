@@ -45,6 +45,7 @@ _ReSharper.CSharp/
 .DS_Store
 Server/.DS_Store
 /Server/.vscode/
+/LandlordsServer/Logs/
 .vs/
 .objs/
 /Unity/.gradle
