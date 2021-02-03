@@ -46,14 +46,6 @@ namespace ETModel
 	[Message(HotfixOpcode.G2C_LoginGate_Back)]
 	public partial class G2C_LoginGate_Back : IResponse {}
 
-//客户端注册请求
-	[Message(HotfixOpcode.C2R_Register)]
-	public partial class C2R_Register : IRequest {}
-
-//客户端注册请求回复
-	[Message(HotfixOpcode.R2C_Register)]
-	public partial class R2C_Register : IResponse {}
-
 }
 namespace ETModel
 {
@@ -73,7 +65,5 @@ namespace ETModel
 		 public const ushort G2C_PlayerInfo = 10012;
 		 public const ushort C2G_LoginGate_Req = 10013;
 		 public const ushort G2C_LoginGate_Back = 10014;
-		 public const ushort C2R_Register = 10015;
-		 public const ushort R2C_Register = 10016;
 	}
 }
