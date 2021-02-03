@@ -46,6 +46,12 @@ namespace ETModel
                 Session session = Game.Scene.GetComponent<NetOuterComponent>().Create(GlobalConfigComponent.Instance.GlobalProto.Address);
                 G2C_TestMessage g2CTestMessage = (G2C_TestMessage)await session.Call(new C2G_TestMessage() { Info = "==>>服务端的朋友,你好!收到请回答" });
 
+                //添加UI组件
+                Game.Scene.AddComponent<UIComponent>();
+
+                //执行斗地主初始事件，也就是创建LandLogin界面
+                Game.EventSystem.Run(UIEventType.LandInitSceneStart);
+
 
             }
             catch (Exception e)
