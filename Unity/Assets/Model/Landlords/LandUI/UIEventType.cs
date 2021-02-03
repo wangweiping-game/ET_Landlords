@@ -13,6 +13,7 @@ namespace ETModel
     public static partial class UIEventType
     {
         public const string LandInitSceneStart = "LandInitSceneStart";
+        public const string LandLoginFinish = "LandLoginFinish";
     }
 
     [Event(UIEventType.LandInitSceneStart)]
@@ -21,6 +22,16 @@ namespace ETModel
         public override void Run()
         {
             Game.Scene.GetComponent<UIComponent>().Create(LandUIType.LandLogin);
+        }
+    }
+
+    //移除登录界面事件
+    [Event(UIEventType.LandLoginFinish)]
+    public class LandLoginFinish : AEvent
+    {
+        public override void Run()
+        {
+            Game.Scene.GetComponent<UIComponent>().Remove(LandUIType.LandLogin);
         }
     }
 

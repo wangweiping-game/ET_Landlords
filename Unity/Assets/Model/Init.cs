@@ -49,8 +49,15 @@ namespace ETModel
                 //添加UI组件
                 Game.Scene.AddComponent<UIComponent>();
 
+                Game.Scene.AddComponent<GamerComponent>();
+
+                //加上消息分发组件MessageDispatcherComponent
+                Game.Scene.AddComponent<MessageDispatcherComponent>();
+
                 //执行斗地主初始事件，也就是创建LandLogin界面
                 Game.EventSystem.Run(UIEventType.LandInitSceneStart);
+
+                
 
 
             }

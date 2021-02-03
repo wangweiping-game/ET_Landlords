@@ -72,6 +72,10 @@
     <Compile Include="Assets\Model\Helper\PositionHelper.cs" />
     <Compile Include="Assets\Model\Helper\ResourcesHelper.cs" />
     <Compile Include="Assets\Model\Init.cs" />
+    <Compile Include="Assets\Model\Landlords\Component\GamerComponent.cs" />
+    <Compile Include="Assets\Model\Landlords\Entity\Gamer.cs" />
+    <Compile Include="Assets\Model\Landlords\Entity\User.cs" />
+    <Compile Include="Assets\Model\Landlords\LandUI\LandHelper.cs" />
     <Compile Include="Assets\Model\Landlords\LandUI\LandLogin\LandLoginComponent.cs" />
     <Compile Include="Assets\Model\Landlords\LandUI\LandLogin\LandLoginFactory.cs" />
     <Compile Include="Assets\Model\Landlords\LandUI\UIEventType.cs" />
@@ -89,7 +93,6 @@
     <Compile Include="Assets\Model\Module\FairyGUI\GWindow.cs" />
     <Compile Include="Assets\Model\Module\Message\NetOuterComponentSystem.cs" />
     <Compile Include="Assets\Model\Module\Message\OuterMessageDispatcher.cs" />
-    <Compile Include="Assets\Model\Module\Message\SessionComponent.cs" />
     <Compile Include="Assets\Model\Module\UI\CanvasConfig.cs" />
     <Compile Include="Assets\Model\Module\UI\IUIFactory.cs" />
     <Compile Include="Assets\Model\Module\UI\UI.cs" />
