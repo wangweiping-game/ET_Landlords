@@ -8,6 +8,7 @@ namespace ETModel
     {
         public const string LandLogin = "LandLogin";
         public const string LandLobby = "LandLobby";
+        public const string SetUserInfo = "SetUserInfo";
 
     }
 
@@ -16,6 +17,8 @@ namespace ETModel
         public const string LandInitSceneStart = "LandInitSceneStart";
         public const string LandLoginFinish = "LandLoginFinish";
         public const string LandInitLobby = "LandInitLobby";
+        public const string LandInitSetUserInfo = "LandInitSetUserInfo";
+        public const string LandSetUserInfoFinish = "LandSetUserInfoFinish";
     }
 
     [Event(UIEventType.LandInitSceneStart)]
@@ -45,5 +48,26 @@ namespace ETModel
             Game.Scene.GetComponent<UIComponent>().Create(LandUIType.LandLobby);
         }
     }
+
+    //初始设置用户信息事件方法
+    [Event(UIEventType.LandInitSetUserInfo)]
+    public class LandInitSetUserInfo:AEvent
+    {
+        public override void Run()
+        {
+            Game.Scene.GetComponent<UIComponent>().Create(LandUIType.SetUserInfo);
+        }
+    }
+
+    //登录完成移除登录界面事件方法
+    [Event(UIEventType.LandSetUserInfoFinish)]
+    public class LandSetUserInfoFinish : AEvent
+    {
+        public override void Run()
+        {
+            Game.Scene.GetComponent<UIComponent>().Remove(LandUIType.SetUserInfo);
+        }
+    }
+
 
 }

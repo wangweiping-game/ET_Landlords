@@ -80,6 +80,8 @@
     <Compile Include="Assets\Model\Landlords\LandUI\LandLobby\LandLobbyFactory.cs" />
     <Compile Include="Assets\Model\Landlords\LandUI\LandLogin\LandLoginComponent.cs" />
     <Compile Include="Assets\Model\Landlords\LandUI\LandLogin\LandLoginFactory.cs" />
+    <Compile Include="Assets\Model\Landlords\LandUI\LandSetUserInfo\LandSetUserInfoComponent.cs" />
+    <Compile Include="Assets\Model\Landlords\LandUI\LandSetUserInfo\LandSetUserInfoFactory.cs" />
     <Compile Include="Assets\Model\Landlords\LandUI\UIEventType.cs" />
     <Compile Include="Assets\Model\Module\AssetsBundle\AssetsBundleLoaderAsync.cs" />
     <Compile Include="Assets\Model\Module\AssetsBundle\AssetsLoaderAsync.cs" />
@@ -330,6 +332,9 @@
     </Reference>
     <Reference Include="UnityEditor.Android.Extensions">
       <HintPath>D:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>D:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>D:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
