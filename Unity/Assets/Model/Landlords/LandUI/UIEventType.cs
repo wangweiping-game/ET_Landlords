@@ -7,6 +7,7 @@ namespace ETModel
     public static partial class LandUIType
     {
         public const string LandLogin = "LandLogin";
+        public const string LandLobby = "LandLobby";
 
     }
 
@@ -14,6 +15,7 @@ namespace ETModel
     {
         public const string LandInitSceneStart = "LandInitSceneStart";
         public const string LandLoginFinish = "LandLoginFinish";
+        public const string LandInitLobby = "LandInitLobby";
     }
 
     [Event(UIEventType.LandInitSceneStart)]
@@ -32,6 +34,15 @@ namespace ETModel
         public override void Run()
         {
             Game.Scene.GetComponent<UIComponent>().Remove(LandUIType.LandLogin);
+        }
+    }
+
+    [Event(UIEventType.LandInitLobby)]
+    public class LandInitLobby:AEvent
+    {
+        public override void Run()
+        {
+            Game.Scene.GetComponent<UIComponent>().Create(LandUIType.LandLobby);
         }
     }
 

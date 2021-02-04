@@ -76,6 +76,8 @@
     <Compile Include="Assets\Model\Landlords\Entity\Gamer.cs" />
     <Compile Include="Assets\Model\Landlords\Entity\User.cs" />
     <Compile Include="Assets\Model\Landlords\LandUI\LandHelper.cs" />
+    <Compile Include="Assets\Model\Landlords\LandUI\LandLobby\LandLobbyComponent.cs" />
+    <Compile Include="Assets\Model\Landlords\LandUI\LandLobby\LandLobbyFactory.cs" />
     <Compile Include="Assets\Model\Landlords\LandUI\LandLogin\LandLoginComponent.cs" />
     <Compile Include="Assets\Model\Landlords\LandUI\LandLogin\LandLoginFactory.cs" />
     <Compile Include="Assets\Model\Landlords\LandUI\UIEventType.cs" />
