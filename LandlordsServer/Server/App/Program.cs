@@ -84,6 +84,8 @@ namespace App
 				// 配置管理
 				Game.Scene.AddComponent<ConfigComponent>();
 				Game.Scene.AddComponent<ConsoleComponent>();
+
+                Game.Scene.AddComponent<OnlineComponent>();
 				
 				while (true)
 				{
